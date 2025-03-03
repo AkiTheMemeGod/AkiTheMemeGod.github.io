@@ -52,9 +52,9 @@ const CONFIG = {
     },
   },
   seo: {
-    title: 'Portfolio of Ariful Alam',
-    description: '',
-    imageURL: '',
+    title: 'Portfolio of Akash K',
+    description: 'This is the portfolio website of Akash K',
+    imageURL: 'https://avatars.githubusercontent.com/u/142716100?s=400&u=7d63a38dc4a907ae49efc877b3675b9548c95635&v=4',
   },
   social: {
     linkedin: 'akash-k19052022',
