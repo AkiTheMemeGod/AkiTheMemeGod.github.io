@@ -91,7 +91,7 @@ const CONFIG = {
       companyLink: 'https://protobase.pythonanywhere.com',
     },
     {
-      company: 'Checkpoint Systems,
+      company: 'Checkpoint Systems',
       position: 'Intern',
       from: 'Feb 2025',
       to: 'Present',
