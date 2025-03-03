@@ -54,18 +54,12 @@ const CONFIG = {
   seo: {
     title: 'Portfolio of Akash K',
     description: 'This is the portfolio website of Akash K',
-    imageURL: 'https://avatars.githubusercontent.com/u/142716100?s=400&u=7d63a38dc4a907ae49efc877b3675b9548c95635&v=4',
+    imageURL: 'https://github.com/AkiTheMemeGod/AkiTheMemeGod.github.io/blob/main/142716100.jpeg?raw=true',
   },
   social: {
     linkedin: 'akash-k19052022',
     x: 'AkiTheMemeGod1',
     instagram: 'aki_the_meme_god',
-    behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
-    stackoverflow: '', // example: '1/jeff-atwood'
-    website: 'https://www.arifszn.com',
-    phone: '',
     email: 'k.akashkumar@gmail.com',
   },
   resume: {
@@ -90,60 +84,40 @@ const CONFIG = {
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
+      company: 'ProtoBase',
+      position: 'Founder',
+      from: 'December 2024',
       to: 'Present',
-      companyLink: 'https://example.com',
+      companyLink: 'https://protobase.pythonanywhere.com',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'Checkpoint Systems,
+      position: 'Intern',
+      from: 'Feb 2025',
+      to: 'Present',
+      companyLink: 'https://checkpointsystems.com/',
     },
   ],
   certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
+      name: 'Certified Ethical Hacker',
+      body: 'Certified Ethical Hacker C-EH From EcCouncil',
+      year: 'June 2024',
+      link: 'https://drive.google.com/file/d/1hB3kUw1XWhaaAbaeVSJW2XhdqJ3lHrTG/view?usp=sharing',
     },
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'SRMIST Ramapuram, Chennai',
+      degree: 'B.Tech CSE specialization in cybersecurity',
+      from: '2022',
+      to: '2026',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
-    },
-  ],
-  publications: [
-    {
-      title: 'Publication Title',
-      conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      institution: 'St.Johns English School & Junior College',
+      degree: '12th Grade',
+      from: '2021',
+      to: '2022',
     },
   ],
   // Display articles from your medium or dev account. (Optional)
