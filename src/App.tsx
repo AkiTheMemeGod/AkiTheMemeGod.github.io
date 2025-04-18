@@ -1,12 +1,15 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, ExternalLink, Code2, Briefcase, User, Download, ChevronRight, ChevronLeft, Award, Building2 } from 'lucide-react';
-
+import { Typed } from "/home/theseus/Portfolio/node_modules/react-typed/dist/mjs/index"
 function App() {
   const certificatesRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
   const [isAutoScrolling, setIsAutoScrolling] = useState(true);
   const [scrollDirection, setScrollDirection] = useState<'left' | 'right'>('right');
+  const typedRef = useRef(null);
+  const typedInstance = useRef<Typed | null>(null);
+
 
   const scroll = (ref: React.RefObject<HTMLDivElement>, direction: 'left' | 'right') => {
     if (ref.current) {
@@ -14,6 +17,27 @@ function App() {
       ref.current.scrollLeft += direction === 'left' ? -scrollAmount : scrollAmount;
     }
   };
+
+  useEffect(() => {
+    if (typedRef.current) {
+      typedInstance.current = new Typed(typedRef.current, {
+        strings: [
+          "Akash",
+          "Full Stack Developer",
+          "API Builder",
+          "Certified Ethical Hacker"
+        ],
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true,
+      });
+    }
+  
+    return () => {
+      typedInstance.current?.destroy();
+    };
+  }, []);
+  
 
   useEffect(() => {
     if (!isAutoScrolling) return;
@@ -125,7 +149,7 @@ function App() {
       title: "Protobase",
       description: "A beginner-friendly backend alternative to Firebase/Supabase with simple APIs and auth.",
       image: "./images/protobase.png",
-      tech: ["Node.js", "Express", "MongoDB"],
+      tech: ["Python", "Sql", "RESTapi", "Flask"],
       link: "https://github.com/AkiTheMemeGod/Protobase"
     },
     {
@@ -140,7 +164,7 @@ function App() {
       description: "A web scraping API service to extract structured data from websites.",
       image: "./images/scrapenest.png",
       tech: ["Python", "Flask", "BeautifulSoup"],
-      link: "https://github.com/AkiTheMemeGod/ScrapeNest"
+      link: "https://github.com/AkiTheMemeGod/ScrapeNest2.0"
     },
     {
       title: "Protobase Flutter Client",
@@ -164,38 +188,38 @@ function App() {
       link: "https://github.com/AkiTheMemeGod/URL-Masker"
     },
     {
-      title: "attendanceAPIcrud",
+      title: "SRM Attendance Tracker API",
       description: "API for managing student attendance in real-time using CRUD operations.",
       image: "./images/attendance-api.png",
       tech: ["Python", "Flask"],
       link: "https://github.com/AkiTheMemeGod/attendanceapiCRUD"
     },
     {
-      title: "SRM Attendance Tracker",
+      title: "SRM Attendance Tracker Mobile APP",
       description: "A personal tool to track SRM university attendance and notify absences.",
       image: "./images/srm-attendance.png",
-      tech: ["Python", "Flask"],
+      tech: ["Flutter", "Dart"],
       link: "https://github.com/AkiTheMemeGod/SRM-Attendance-Tracker"
     },
     {
       title: "SpendIt - Expense Tracker",
       description: "A budget tracking and expense management app to help manage finances.",
       image: "./images/spendit.png",
-      tech: ["Flutter", "Firebase"],
-      link: "https://github.com/AkiTheMemeGod/SpendIt-Expense-Tracker"
+      tech: ["Sqlite", "Streamlit", "Python"],
+      link: "https://github.com/AkiTheMemeGod/Spend-it-Expense-tracler",
     },
     {
       title: "VaultBot Discord",
       description: "A Discord bot to securely store notes, secrets, and commands.",
       image: "./images/vaultbot.png",
       tech: ["Python", "Discord.py"],
-      link: "https://github.com/AkiTheMemeGod/VaultBot-Discord"
+      link: "https://github.com/AkiTheMemeGod/Vault-Bot-discord"
     },
     {
       title: "CarryMyNotes",
       description: "A simple app for managing and sharing study notes between students.",
       image: "./images/carrymynotes.png",
-      tech: ["Flutter", "Firebase"],
+      tech: ["Streamlit", "Sqlite"],
       link: "https://github.com/AkiTheMemeGod/CarryMyNotes"
     },
     {
@@ -210,14 +234,14 @@ function App() {
       description: "A research tool demonstrating how ransomware can be simulated for educational purposes.",
       image: "./images/ransomware.png",
       tech: ["Python"],
-      link: "https://github.com/AkiTheMemeGod/Python-Ransomware"
+      link: "https://github.com/AkiTheMemeGod/Python_ransomware"
     },
     {
       title: "Password Checker 2.0",
       description: "A tool to verify password strength and breaches using haveibeenpwned API.",
       image: "./images/password-checker.png",
       tech: ["Python", "API"],
-      link: "https://github.com/AkiTheMemeGod/Password-Checker-2.0"
+      link: "https://github.com/AkiTheMemeGod/Password_Checker-v2.0"
     },
     {
       title: "BitBot",
@@ -230,8 +254,8 @@ function App() {
       title: "SendFiles API",
       description: "API to securely upload and send files with temporary links.",
       image: "./images/sendfiles-api.png",
-      tech: ["Node.js", "Express"],
-      link: "https://github.com/AkiTheMemeGod/SendFiles-API"
+      tech: ["Python", "Streamlit"],
+      link: "https://github.com/AkiTheMemeGod/sendfiles"
     },
     {
       title: "QuickTalk",
@@ -252,25 +276,26 @@ function App() {
 
   const experience = [
     {
-      company: "Tech Corp",
-      position: "Senior Full Stack Developer",
-      period: "2022 - Present",
-      description: "Led development of enterprise applications, mentored junior developers, and implemented CI/CD pipelines.",
-      tech: ["React", "Node.js", "AWS"]
+      company: "Checkpoint Systems",
+      position: "Project Intern",
+      period: "2025 Feb - Present",
+      description: "Working on a developing an API that interacts with the production database.",
+      tech: ["Python3", "MongoDB", "Flask", "HTML/CSS"],
+      link: "https://checkpointsystems.com/"
     },
     {
-      company: "StartupX",
-      position: "Frontend Developer",
-      period: "2020 - 2022",
-      description: "Developed responsive web applications and improved performance metrics by 40%.",
-      tech: ["Vue.js", "TypeScript", "GraphQL"]
+      company: "ProtoBase",
+      position: "Owner - Creator",
+      period: "2024 Dec - Present",
+      description: "Alternate to Firebase/Supabase that handles cloud authentication into less lines of code simplifying developer experience.",
+      tech: ["Flask", "MySql", "Node.js", "HTML/CSS", "SwaggerUI", "RESTapi"]
     },
     {
-      company: "Digital Agency",
-      position: "Web Developer",
-      period: "2018 - 2020",
-      description: "Built custom websites and e-commerce solutions for various clients.",
-      tech: ["JavaScript", "PHP", "MySQL"]
+      company: "AnarchKey",
+      position: "Owner - Creator",
+      period: "2025 April - Present",
+      description: "Secure Cloud Api-key manager to prevent api-key leaks.",
+      tech: ["Python3", "MongoDB", "MySQL", "Flask", "RESTapi"]
     }
   ];
 
@@ -298,35 +323,35 @@ function App() {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="pt-32 pb-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <motion.div 
-            className="text-center"
-            initial="initial"
-            animate="animate"
-            variants={fadeIn}
-          >
-            <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
-              Full Stack Developer
-            </h1>
-            <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-              I build exceptional digital experiences that combine beautiful design with powerful functionality
-            </p>
-            <div className="flex justify-center space-x-4">
-              <a href="#" className="p-2 text-gray-400 hover:text-purple-500 transition-colors">
-                <Github size={24} />
-              </a>
-              <a href="#" className="p-2 text-gray-400 hover:text-purple-500 transition-colors">
-                <Linkedin size={24} />
-              </a>
-              <a href="#" className="p-2 text-gray-400 hover:text-purple-500 transition-colors">
-                <Mail size={24} />
-              </a>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+    {/* Hero Section */}
+    <section className="pt-32 pb-16 px-4">
+      <div className="max-w-6xl mx-auto">
+        <motion.div 
+          className="text-center"
+          initial="initial"
+          animate="animate"
+          variants={fadeIn}
+        >
+        <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
+          <span ref={typedRef}></span>
+        </h1>
+
+          <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+          I build secure, high-impact apps that merge clean design with real-world functionality — from intuitive UIs to hacker-proof backends.          </p>
+          <div className="flex justify-center space-x-4">
+            <a href="https://github.com/AkiTheMemeGod" className="p-2 text-gray-400 hover:text-purple-500 transition-colors">
+              <Github size={24} />
+            </a>
+            <a href="https://www.linkedin.com/in/akash-k19052022" className="p-2 text-gray-400 hover:text-purple-500 transition-colors">
+              <Linkedin size={24} />
+            </a>
+            <a href="mailto:k.akashkumar@gmail.com" className="p-2 text-gray-400 hover:text-purple-500 transition-colors">
+              <Mail size={24} />
+            </a>
+          </div>
+        </motion.div>
+      </div>
+    </section>
 
       {/* About Section */}
       <section id="about" className="py-16 bg-gray-800 px-4">
@@ -341,26 +366,32 @@ function App() {
             <div>
               <h2 className="text-3xl font-bold mb-6">About Me</h2>
               <p className="text-gray-400 mb-4">
-                I'm a passionate full-stack developer with expertise in modern web technologies.
-                I love creating efficient, scalable, and user-friendly applications that solve real-world problems.
+              I’m Akash — a full-stack Python & Flutter developer and CEH-certified ethical hacker. Currently pursuing Cybersecurity at SRM University, I focus on building secure, scalable, and developer-friendly tools.
+From ProtoBase (a Firebase/Supabase alternative) to QuickTalk (a real-time chat app) and AnarchKey (secure API key storage), I create solutions that blend performance with security.
+I write code that works, holds up under pressure, and doesn’t flinch when challenged.
+Let’s build something bold.
               </p>
               <div className="flex space-x-4 mt-6">
-                <button className="flex items-center gap-2 bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors">
+                <a
+                  href="resume.pdf" // Path to the resume file in the public folder
+                  download="Akash_Resume.pdf" // Optional: Rename the file when downloaded
+                  className="flex items-center gap-2 bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors"
+                >
                   <Download size={20} />
                   Resume
-                </button>
+                </a>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="p-6 bg-gray-900 rounded-lg border border-gray-700">
                 <Code2 className="text-purple-500 mb-4" size={32} />
                 <h3 className="font-semibold mb-2">Frontend</h3>
-                <p className="text-gray-400 text-sm">React, TypeScript, Tailwind CSS</p>
+                <p className="text-gray-400 text-sm">Flutter, HTML/CSS, React, Streamlit</p>
               </div>
               <div className="p-6 bg-gray-900 rounded-lg border border-gray-700">
                 <Briefcase className="text-purple-500 mb-4" size={32} />
                 <h3 className="font-semibold mb-2">Backend</h3>
-                <p className="text-gray-400 text-sm">Node.js, Python, PostgreSQL</p>
+                <p className="text-gray-400 text-sm">MongoDB, Python, MySql, C/C++, Flask, RESTapi, Dart/Flutter</p>
               </div>
             </div>
           </motion.div>
