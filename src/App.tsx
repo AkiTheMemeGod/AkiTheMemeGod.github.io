@@ -75,70 +75,70 @@ function App() {
       title: "Certified Ethical Hacker",
       issuer: "Ec-Council",
       date: "2024-2027",
-      image: "certs/CEH.png",
+      image: "/certs/CEH.png",
       link: "https://drive.google.com/file/d/1hB3kUw1XWhaaAbaeVSJW2XhdqJ3lHrTG/view?usp=sharing"
     },
     {
       title: "Postman API Fundamentals Student Expert",
       issuer: "Postman",
       date: "2025",
-      image: "certs/postman.png",
+      image: "/certs/postman.png",
       link: "https://drive.google.com/file/d/1-nkor-70kFai7SEWpRq5F-wE9ZZO29nO/view?usp=sharing"
     },
     {
       title: "Python3 Certification",
       issuer: "CodinGame",
       date: "2025",
-      image: "certs/codingame.png",
+      image: "/certs/codingame.png",
       link: "https://drive.google.com/file/d/1AntSLHA_t4ODlQXSKuMRWOBq70JUCCcJ/view?usp=sharing"
     },
     {
       title: "Python (Basic)",
       issuer: "HackerRank",
       date: "2025",
-      image: "certs/PyBasic.png",
+      image: "/certs/PyBasic.png",
       link: "https://www.hackerrank.com/certificates/49a7526c9e0f"
     },
     {
       title: "Rest API (Intermediate)",
       issuer: "HackerRank",
       date: "2025",
-      image: "certs/RESTAPI.png",
+      image: "/certs/RESTAPI.png",
       link: "https://www.hackerrank.com/certificates/d01ae16105b3"
     },
     {
       title: "C# (Basic)",
       issuer: "HackerRank",
       date: "2025",
-      image: "certs/Csharp.png",
+      image: "/certs/Csharp.png",
       link: "https://www.hackerrank.com/certificates/211cbb185738"
     },
     {
       title: "Problem Solving (Basic)",
       issuer: "HackerRank",
       date: "2025",
-      image: "certs/PSbasic.png",
+      image: "/certs/PSbasic.png",
       link: "https://www.hackerrank.com/certificates/2ef53b769dd2"
     },
     {
       title: "SQL (Basic)",
       issuer: "HackerRank",
       date: "2025",
-      image: "certs/SQLBasic.png",
+      image: "/certs/SQLBasic.png",
       link: "https://www.hackerrank.com/certificates/7bbbf36ce744"
     },
     {
       title: "Software Engineer",
       issuer: "HackerRank",
       date: "2025",
-      image: "certs/SE.png",
+      image: "/certs/SE.png",
       link: "https://www.hackerrank.com/certificates/0f3f7b4df252"
     },
     {
       title: "Software Engineer Intern",
       issuer: "HackerRank",
       date: "2025",
-      image: "certs/SE-intern.png",
+      image: "/certs/SE-intern.png",
       link: "https://www.hackerrank.com/certificates/79808e1024e8"
     }
   ];
