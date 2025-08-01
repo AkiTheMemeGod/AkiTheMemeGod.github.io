@@ -7,11 +7,11 @@ html {
 }
 
 body {
-  @apply text-gray-100 antialiased bg-gray-900;
+  @apply text-gray-100 antialiased bg-black;
 }
 
 ::selection {
-  @apply bg-purple-600 text-white;
+  @apply bg-red-600 text-white;
 }
 
 .scrollbar-hide {
